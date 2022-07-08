@@ -11,12 +11,23 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby-plugin-s3 deploy"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "framer-motion": "^6.4.2",
     "gatsby": "^4.16.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "gatsby-plugin-image": "^2.18.0",
+    "gatsby-plugin-s3": "^0.3.8",
+    "gatsby-plugin-sharp": "^4.18.0",
+    "gatsby-plugin-styled-components": "^5.16.0",
+    "gatsby-source-filesystem": "^4.18.0",
+    "gatsby-transformer-sharp": "^4.18.0",
+    "normalize.css": "^8.0.1",
+    "react-countdown-now": "^2.1.2",
+    "react-icons": "^4.4.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "prettier": "^2.6.2"

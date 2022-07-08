@@ -6,5 +6,23 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+  {
+    resolve: `gatsby-plugin-s3`,
+    options: {
+        bucketName: 'www.sandpwedding.co.uk',
+    },
+  },
+
+  
+  
+  `react-countdown-now`]
+  
+
 }
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+
