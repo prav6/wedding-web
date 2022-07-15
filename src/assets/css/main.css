@@ -262,12 +262,19 @@ button.block {
   margin: 0 auto;
 }
 .page {
+  min-height: calc(50vh - (6rem + 4rem));
+}
+
+.page1 {
   min-height: calc(100vh - (6rem + 4rem));
 }
 
 .title {
-  text-align: center;
-  margin-bottom: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
 .title10 {
@@ -284,6 +291,13 @@ button.block {
   align-items: center;
   
 
+}
+
+.title100{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  
 }
 
 .title-underline {
@@ -522,6 +536,11 @@ form > *:last-child {
   height: 500px;
 }
 
+.about-img1 {
+  border-radius: var(--borderRadius);
+  height: 500px;
+}
+
 @media screen and (min-width: 992px) {
   .about-page {
     grid-template-columns: 1fr 1fr;
@@ -529,7 +548,11 @@ form > *:last-child {
     height: 400px;
   }
   .about-img {
-    height: 100%;
+    height: 115%;
+  }
+  .about-img1 {
+    height: 60%;
+    width: 100%;
   }
 }
 
@@ -538,12 +561,15 @@ form > *:last-child {
   max-width: 100%;
 }
 /*#########*/
+/*#########*/
 /* Hero */
 /*#########*/
 
 .hero-img {
   height: 100%;
   border-radius: var(--borderRadius);
+  opacity: 0.5;
+  
 }
 .hero {
   height: 40vh;
@@ -559,7 +585,7 @@ form > *:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(44, 43, 43, 0.4);
   border-radius: var(--borderRadius);
 }
 .hero-text {
@@ -717,10 +743,11 @@ form > *:last-child {
 
 .recipe-hero {
   display: grid;
-  gap: 3rem;
+  gap: 4rem;
 }
 .recipe-hero .about-img {
   height: 400px;
+  width: 350px;
 }
 .recipe-icons {
   display: grid;

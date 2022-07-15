@@ -8,15 +8,25 @@ module.exports = {
   /* Your site config here */
   plugins: [
   {
-    resolve: `gatsby-plugin-s3`,
+    resolve: `gatsby-plugin-styled-components`,
     options: {
-        bucketName: 'www.sandpwedding.co.uk',
+        
     },
   },
+  {
+    resolve: `react-countdown-now`,
+    options: {
+        
+    },
+  },
+  
 
   
   
-  `react-countdown-now`]
+  
+  `gatsby-plugin-image`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,]
   
 
 }

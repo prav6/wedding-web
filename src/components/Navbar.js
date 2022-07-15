@@ -24,21 +24,21 @@ const Navbar = () => {
           >
             home
           </Link>
-          <Link
+          {/* <Link
             to="/about"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
           >
             Our story
-          </Link>
+          </Link> */}
           <Link
             to="/events"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
           >
-            Events
+            Schedule
           </Link>
           <Link
             to="/rsvp"
